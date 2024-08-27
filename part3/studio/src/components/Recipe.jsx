@@ -1,9 +1,17 @@
 import { useState } from 'react';
-
+/*
+Sushi Bake Onigiri (Rice Balls)
+Rice balls filled with creamy imitation crab and shrimp
+Rice, Imitation crab, shrimp, cream cheese, mirin
+https://i0.wp.com/mariellamahal.com/wp-content/uploads/2023/03/featured-image_1.2.3.jpg?resize=683%2C1024&ssl=1
+https://i0.wp.com/mariellamahal.com/wp-content/uploads/2022/06/DSC01168-scaled.jpeg?resize=819%2C1024&ssl=1
+Mariella Mahal
+https://mariellamahal.com/
+*/
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://mariellamahal.com/";
+   let authorPhoto = "https://i0.wp.com/mariellamahal.com/wp-content/uploads/2022/06/DSC01168-scaled.jpeg?resize=819%2C1024&ssl=1";
+   let authorName = "Mariella Mahal";
 
    return (
       <div>
@@ -17,7 +25,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["Rice", "Imitation crab", "Shrimp", "Cream cheese", "Nori Seaweed"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +44,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Sushi Bake Onigiri (Rice Balls)</h1>
+            <p>Rice balls filled with creamy imitation crab and shrimp</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +57,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://i0.wp.com/mariellamahal.com/wp-content/uploads/2023/03/featured-image_1.2.3.jpg?resize=683%2C1024&ssl=1" alt="" className="imageUpdates"/>
    );
 }
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function BoardAssignment () {
-   const boards = [];
+   const boards = ["Sushi Lovers","Asian Cuisine",""];
 
    const handleChange = (event) => {
    }
